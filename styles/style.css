@@ -14,12 +14,14 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   max-width: 1440px;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font);
   font-variation-settings: "wght" var(--wght-normal);
   background-image: var(--bg-pattern);
   background-size: cover;
-  background-position: fixed;
+  background-position: center;
+  background-attachment: fixed;
   padding: 100px 0;
+  margin: 0 auto;
 }
 
 .section-width {
@@ -206,7 +208,12 @@ button {
   align-content: center;
   justify-content: center;
   border: 2px solid transparent;
-  background-color: #fff;
+  background-color: transparent;
+  transition: border 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
 }
 
 .card__icon-button:focus-visible {
